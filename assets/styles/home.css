@@ -1,0 +1,17 @@
+.container .intro h1 {
+  text-align: center;
+}
+.container .intro p {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.container .services {
+  padding: 2rem 0;
+}
+.container .services .service .frame {
+  border: 0.01rem solid black;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,15 @@
+.exercises h1 {
+  text-align: center;
+}
+.exercises .swiper {
+  max-width: 1200px;
+}
+.exercises .swiper .swiper-wrapper .swiper-slide .section {
+  padding: 1rem;
+}
+.exercises .swiper .swiper-wrapper .swiper-slide .section .title {
+  color: rgba(0, 0, 0, 0.1);
+}
+.exercises .swiper .swiper-wrapper .swiper-slide .section .type {
+  color: pink;
+}/*# sourceMappingURL=swiper.css.map */

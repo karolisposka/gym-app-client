@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  header {
+    color: $color-primary;
+    .container {
+      padding: 1rem;
+      .mobileNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+          cursor: pointer;
+          font-size: 3rem;
+        }
+      }
+      img {
+        width: 5rem;
+      }
+      .navigation {
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s ease;
+        a {
+          display: block;
+          text-align: center;
+          padding: 0.5rem 0;
+          text-decoration: none;
+          color: $color-dark;
+          font-size: 1.2rem;
+        }
+        .logoutBtn {
+          display: none;
+        }
+      }
+      .navigationActive {
+        height: 15vh;
+        transition: 0.5s ease;
+        a {
+          opacity: 0.5;
+          transition: 0.3s ease;
+        }
+        a:hover {
+          opacity: 1;
+          padding: 0.75rem 0;
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
+}

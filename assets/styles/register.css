@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .register .container {
+    display: block;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+    height: calc(100vh - 10rem);
+  }
+  .register .container form {
+    width: 60%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=register.css.map */

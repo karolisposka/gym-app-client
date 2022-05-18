@@ -1,0 +1,39 @@
+.exercises {
+  h1 {
+    text-align: center;
+  }
+  .swiper {
+    max-width: 1200px;
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        .section {
+          padding: 2rem 4rem 2rem 4rem;
+          .title {
+            color: $color-dark;
+            text-transform: uppercase;
+            padding: 0.25rem 0;
+          }
+
+          .description {
+            overflow: scroll;
+            height: 120px;
+          }
+          .type {
+            color: $color-lightBlue;
+          }
+        }
+        button {
+          padding: 0.5rem 0.75rem;
+          margin: 0 auto;
+          background: $color-light;
+          color: $color-lightBlue;
+          border: 0.05rem solid $color-lightBlue;
+        }
+      }
+    }
+  }
+}

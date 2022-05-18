@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/assets.js" defer></script>
+    <script src="assets/burgermenu.js" defer></script>
+    <script src="assets/add.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="mobileNav">
+          <img src="assets/images/logo.png" alt="Smart gym" />
+          <button id="burgerMenu" data-feather="menu"></button>
+        </div>
+        <nav class="navigation">
+          <a href="home.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="home.html/#exercises">Exercises</a>
+          <button id="logout" data-feather="log-out"></button>
+        </nav>
+      </div>
+    </header>
+    <main class="add">
+      <div class="container">
+        <form class="form" name="addSet">
+          <div class="error">
+            <p class="errorText"></p>
+            <i data-feather="x"></i>
+          </div>
+          <h2 id="exerciseTitle"></h2>
+          <div class="inputBox">
+            <label for="weight">Weight</label>
+            <div class="input">
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input
+                type="number"
+                placeholder="Weight/kgs"
+                id="weight"
+                name="weight"
+                required
+              />
+            </div>
+          </div>
+          <div class="inputBox">
+            <label for="reps">Reps</label>
+            <div class="input">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="number"
+                id="reps"
+                name="reps"
+                placeholder="Reps"
+                require
+              />
+            </div>
+          </div>
+          <div class="inputBox">
+            <label for="sets">Sets</label>
+            <div class="input">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="number"
+                id="sets"
+                name="sets"
+                placeholder="Sets"
+                require
+              />
+            </div>
+          </div>
+
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="media">
+        <div data-feather="twitter"></div>
+        <div data-feather="instagram"></div>
+        <div data-feather="facebook"></div>
+      </div>
+    </footer>
+  </body>
+</html>

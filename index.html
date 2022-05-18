@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="assets/styles/style.css
+    "
+    />
+    <script
+      src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"
+      defer
+    ></script>
+    <script src="assets/assets.js" defer></script>
+    <script src="assets/burgermenu.js" defer></script>
+    <script src="assets/index.js" defer></script>
+    <title>Smart Gym</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="mobileNav">
+          <img src="assets/images/logo.png" alt="Smart gym" />
+          <button id="burgerMenu" data-feather="menu"></button>
+        </div>
+        <nav class="navigation">
+          <a href="register.html">Register</a>
+          <a href="index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <section>
+            <h1>Welcome to SMART GYM</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              soluta obcaecati quia ut? A?
+            </p>
+          </section>
+        </div>
+        <div class="right">
+          <div class="container">
+            <div class="error">
+              <p class="errorText"></p>
+              <i data-feather="x"></i>
+            </div>
+            <form class="form" name="login">
+              <h1>Log into account</h1>
+              <div class="inputBox">
+                <label for="email">Email address</label>
+                <div class="input">
+                  <div data-feather="mail"></div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="inputBox">
+                <label for="password">Password</label>
+                <div class="input">
+                  <div data-feather="lock"></div>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    require
+                  />
+                </div>
+              </div>
+              <button type="submit">login</button>
+              <div class="links">
+                <a href="">forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="media">
+        <div data-feather="twitter"></div>
+        <div data-feather="instagram"></div>
+        <div data-feather="facebook"></div>
+      </div>
+    </footer>
+  </body>
+</html>

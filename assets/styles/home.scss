@@ -1,0 +1,55 @@
+.container {
+  .intro {
+    h1 {
+      text-align: center;
+    }
+    p {
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+  }
+  .services {
+    padding: 2rem 0;
+    .service {
+      .frame {
+        margin: 0 auto;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 0.2rem 0.2rem 0.2rem solid black;
+        border: 0.01rem solid black;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          color: $color-lightBlue;
+        }
+      }
+      p {
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .intro {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+
+    .services {
+      padding: 3rem 0;
+      display: flex;
+      .service {
+        margin: 0 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.left {
+  display: none;
+}
+.right {
+  .container {
+    form {
+      h1 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobileNav {
+      img {
+        width: 8rem;
+      }
+      button {
+        display: none;
+      }
+      svg {
+        display: none;
+      }
+    }
+    .navigation {
+      display: flex;
+      height: auto !important;
+      align-items: center;
+      a {
+        margin: 0 0.75rem;
+        cursor: pointer;
+        position: relative;
+      }
+      button {
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+      a:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0.1rem;
+        background: $color-lightBlue;
+        top: 1.8rem;
+        transition: 0.3s ease;
+      }
+
+      a:hover:before {
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      height: calc(100vh - 11rem);
+      .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        section {
+          padding: 3rem 2rem;
+          h1 {
+            padding: 1.5rem 0;
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        padding-right: 1rem;
+        .container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          form {
+            width: 80%;
+            border: 0.1rem solid black;
+            border-right: 1rem solid $color-lightBlue;
+            padding: 5rem 1rem;
+            border-radius: 0.5rem;
+            h1 {
+              display: block;
+              text-align: center;
+            }
+            .inputBox {
+              width: calc(100% - 5rem);
+              input {
+                margin-left: 0.5rem;
+                outline: none;
+              }
+              input:focus {
+                border-bottom: 0.005rem solid $color-lightBlue;
+              }
+            }
+            button {
+              padding: 0.5rem 2rem;
+              font-size: 1.5rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

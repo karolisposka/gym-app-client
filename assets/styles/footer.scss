@@ -1,0 +1,18 @@
+footer {
+  display: block;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  color: $color-lightBlue;
+  padding: 0.75rem 0;
+  .media {
+    display: Flex;
+    justify-content: center;
+    svg {
+      margin: 0 2rem;
+      font-size: 5rem;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
