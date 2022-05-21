@@ -1,5 +1,4 @@
 feather.replace();
-
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",

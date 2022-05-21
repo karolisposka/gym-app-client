@@ -234,6 +234,7 @@ body header .container .navigationActive a:hover {
 }
 .exercises .swiper .swiper-wrapper .swiper-slide .section .description {
   overflow: scroll;
+  overflow-x: hidden;
   height: 120px;
 }
 .exercises .swiper .swiper-wrapper .swiper-slide .section .type {
@@ -247,19 +248,39 @@ body header .container .navigationActive a:hover {
   border: 0.05rem solid #007ea7;
 }
 
+.form-only .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  height: calc(100vh - 10rem);
+}
+.form-only .container form {
+  width: 60%;
+  margin-top: 5rem;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
-  .register .container {
-    display: block;
+  .form-only .container {
+    display: flex;
+    justify-content: center;
     max-width: 1200px;
     padding: 1rem;
     margin: 0 auto;
     height: calc(100vh - 10rem);
   }
-  .register .container form {
+  .form-only .container form {
     width: 60%;
+    margin-top: 5rem;
     margin: 0 auto;
   }
 }
+.reset .container .text {
+  margin: 0 auto;
+}
+
 .container {
   padding: 1rem;
 }
@@ -269,8 +290,11 @@ body header .container .navigationActive a:hover {
   align-items: center;
   margin-top: 2rem;
 }
+.container .form .text {
+  text-align: center;
+}
 .container .form .inputBox {
-  width: calc(100% - 6rem);
+  width: calc(100% - 4rem);
   background: white;
   padding: 0.5rem 1.2rem;
   border-radius: 1rem;
@@ -313,7 +337,6 @@ body header .container .navigationActive a:hover {
 }
 .container .error {
   display: flex;
-  background: rgb(195, 56, 56);
   height: 0;
   width: calc(100% - 6rem);
   color: White;
@@ -337,22 +360,9 @@ body header .container .navigationActive a:hover {
   font-size: 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .add .container {
-    display: block;
-    max-width: 1200px;
-    padding: 1rem;
-    margin: 0 auto;
-    height: calc(100vh - 10rem);
-  }
-  .add .container form {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-  }
-}
 footer {
-  display: block;
+  position: static;
+  width: 100%;
   bottom: 0;
   left: 0;
   margin: 0 auto;
@@ -362,6 +372,7 @@ footer {
 footer .media {
   display: Flex;
   justify-content: center;
+  align-items: center;
 }
 footer .media svg {
   margin: 0 2rem;
@@ -396,14 +407,23 @@ footer .media svg {
   display: flex;
   flex-direction: column;
 }
-.dashboard .container .filterData .input:not(:last-child) label {
+.dashboard .container .filterData .input:last-child {
+  display: flex;
+  align-items: center;
+}
+.dashboard .container .filterData .input:last-child .button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.dashboard .container .filterData label {
   margin-bottom: 0.5rem;
   font-size: 0.75rem;
 }
-.dashboard .container .filterData .input:not(:last-child) input {
+.dashboard .container .filterData input {
   box-sizing: border-box;
 }
-.dashboard .container #chart {
+
+#chart {
   margin-top: 2rem;
   height: 200px;
   width: 100%;
@@ -422,6 +442,9 @@ footer .media svg {
   .dashboard .container .Container-dashboards .dashboardBox {
     width: calc(50% - 2rem);
   }
+  .dashboard .container .Container-dashboards .dashboardBox canvas {
+    height: 50rem;
+  }
   .dashboard .container form .filterData {
     display: flex;
   }
@@ -430,9 +453,5 @@ footer .media svg {
   }
   .dashboard .container form .filterData .input label {
     margin-bottom: 0.5rem;
-  }
-  .dashboard .container #chart {
-    width: 35rem;
-    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

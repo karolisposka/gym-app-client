@@ -21,21 +21,29 @@
       margin: 0 0.5rem;
       display: flex;
       flex-direction: column;
-
-      label {
-        margin-bottom: 0.5rem;
-        font-size: 0.75rem;
-      }
-      input {
-        box-sizing: border-box;
+    }
+    .input:last-child {
+      display: flex;
+      align-items: center;
+      .button {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
       }
     }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-size: 0.75rem;
+    }
+    input {
+      box-sizing: border-box;
+    }
   }
-  #chart {
-    margin-top: 2rem;
-    height: 200px;
-    width: 100%;
-  }
+}
+#chart {
+  margin-top: 2rem;
+  height: 200px;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
@@ -48,6 +56,9 @@
       flex-direction: row;
       .dashboardBox {
         width: calc(50% - 2rem);
+        canvas {
+          height: 50rem;
+        }
       }
     }
     form .filterData {
@@ -58,10 +69,6 @@
           margin-bottom: 0.5rem;
         }
       }
-    }
-    #chart {
-      width: 35rem;
-      margin: 0 auto;
     }
   }
 }

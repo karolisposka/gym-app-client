@@ -24,14 +24,23 @@
   display: flex;
   flex-direction: column;
 }
-.dashboard .container .filterData .input:not(:last-child) label {
+.dashboard .container .filterData .input:last-child {
+  display: flex;
+  align-items: center;
+}
+.dashboard .container .filterData .input:last-child .button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.dashboard .container .filterData label {
   margin-bottom: 0.5rem;
   font-size: 0.75rem;
 }
-.dashboard .container .filterData .input:not(:last-child) input {
+.dashboard .container .filterData input {
   box-sizing: border-box;
 }
-.dashboard .container #chart {
+
+#chart {
   margin-top: 2rem;
   height: 200px;
   width: 100%;
@@ -50,6 +59,9 @@
   .dashboard .container .Container-dashboards .dashboardBox {
     width: calc(50% - 2rem);
   }
+  .dashboard .container .Container-dashboards .dashboardBox canvas {
+    height: 50rem;
+  }
   .dashboard .container form .filterData {
     display: flex;
   }
@@ -58,9 +70,5 @@
   }
   .dashboard .container form .filterData .input label {
     margin-bottom: 0.5rem;
-  }
-  .dashboard .container #chart {
-    width: 35rem;
-    margin: 0 auto;
   }
 }/*# sourceMappingURL=dashboard.css.map */

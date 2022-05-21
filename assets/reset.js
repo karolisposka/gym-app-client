@@ -1,5 +1,6 @@
 feather.replace();
-const form = document.forms.register;
+
+const form = document.forms.reset;
 
 const displayError = (text, status) => {
   let errorBox = document.querySelector(".error");
@@ -17,21 +18,17 @@ const displayError = (text, status) => {
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const email = e.target.elements.email.value.trim();
-  const password = e.target.elements.password.value;
   try {
-    const data = await fetch("http://localhost:8080/v1/users/register", {
+    const data = await fetch("http://localhost:8080/v1/users/reset-password/", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email }),
     });
     const res = await data.json();
-    if (res.msg === "User already exist") {
-      return displayError(res.msg);
-    }
-    return location.replace("index.html");
+    displayError(res.msg, data.status);
   } catch (err) {
-    console.log(err);
+    displayError(res.msg, data.status);
   }
 });

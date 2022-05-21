@@ -16,7 +16,6 @@
   .form-only .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     max-width: 1200px;
     padding: 1rem;
     margin: 0 auto;
@@ -24,6 +23,7 @@
   }
   .form-only .container form {
     width: 60%;
+    margin-top: 5rem;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=register.css.map */
+}/*# sourceMappingURL=layouts.css.map */

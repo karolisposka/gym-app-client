@@ -24,7 +24,6 @@
     ></script>
 
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <script src="assets/assets.js" defer></script>
     <script src="assets/burgermenu.js" defer></script>
     <script src="assets/dashboard.js" defer></script>
     <script
@@ -44,9 +43,8 @@
         </div>
         <nav class="navigation">
           <a href="home.html">Home</a>
-          <a href="dashboard.html">Dashboard</a>
           <a href="#">Exercises</a>
-          <button id="logout" data-feather="log-out"></button>
+          <a href="index.html" id="logout">logout</a>
         </nav>
       </div>
     </header>
@@ -59,11 +57,11 @@
           </div>
           <div class="input">
             <label for="from">Date form</label>
-            <input type="date" id="from" />
+            <input type="date" id="from" required />
           </div>
           <div class="input">
             <label for="to">Date To</label>
-            <input type="date" id="to" />
+            <input type="date" id="to" required />
           </div>
           <div class="input">
             <button class="button" type="submit">Search</button>
@@ -73,13 +71,16 @@
           <div class="dashboardBox">
             <canvas id="first-dashboard"></canvas>
           </div>
-          <div class="dashboardBox">
-            <canvas id="second-dashboard"></canvas>
-          </div>
+          <div class="dashboardBox" id="lineChart"></div>
         </section>
-
-        <div id="chart"></div>
       </div>
     </main>
+    <footer>
+      <div class="media">
+        <div data-feather="twitter"></div>
+        <div data-feather="instagram"></div>
+        <div data-feather="facebook"></div>
+      </div>
+    </footer>
   </body>
 </html>
