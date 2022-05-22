@@ -66,8 +66,17 @@ const getUserData = async () => {
       type: "doughnut",
       data: dataTable2,
       options: {
+        plugins: {
+          title: {
+            display: true,
+            text: "Types of exercise",
+            font: {
+              size: 24,
+            },
+          },
+        },
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
       },
     };
 
@@ -100,8 +109,6 @@ filterForm.addEventListener("submit", async (e) => {
         new Date(item.created_at).getTime() > new Date(from).getTime() &&
         new Date(item.created_at).getTime() < new Date(to).getTime()
     );
-
-    console.log(new Date(res[0].created_at).getTime());
 
     const labels = filteredData.map((item) => {
       return new Date(item.created_at).toLocaleString("en-GB", {
@@ -139,8 +146,17 @@ filterForm.addEventListener("submit", async (e) => {
       type: "line",
       data: chartData,
       options: {
+        maintainAspectRatio: false,
         responsive: true,
-        maintainAspectRatio: true,
+        plugins: {
+          title: {
+            display: true,
+            text: `Progress of ${exerciseName}`,
+            font: {
+              size: 24,
+            },
+          },
+        },
         scales: {
           x: {
             ticks: {
@@ -154,7 +170,8 @@ filterForm.addEventListener("submit", async (e) => {
         },
       },
     };
-    chart.innerHTML = `<canvas id="myChart"></canvas>`;
+    chart.innerHTML = `
+    <canvas id="myChart" ></canvas>`;
     const ctx = document.getElementById("myChart").getContext("2d");
     const myChart = new Chart(ctx, config);
   } catch (err) {
