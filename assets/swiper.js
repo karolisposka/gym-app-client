@@ -2,9 +2,10 @@ feather.replace();
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
-  loop: false,
-
-  // If we need pagination
+  loop: true,
+  preventClicks: false,
+  preventClicksPropagation: false,
+  simulateTouch: false,
 
   // Navigation arrows
   navigation: {
@@ -19,22 +20,22 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     1200: {
       slidesPerView: 2,
-      loopedSlides: 1,
-      spaceBetween: 10,
+      loopedSlides: 2,
+      spaceBetween: 5,
     },
     1024: {
-      slidesPerView: 3,
-      loopedSlides: 1,
-      spaceBetween: 10,
-    },
-    768: {
       slidesPerView: 2,
       loopedSlides: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 1,
+      loopedSlides: 1,
       spaceBetween: 10,
     },
     675: {
-      slidesPerView: 3,
-      loopedSlides: 2,
+      slidesPerView: 1,
+      loopedSlides: 1,
       spaceBetween: 20,
     },
   },

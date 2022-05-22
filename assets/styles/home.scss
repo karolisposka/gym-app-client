@@ -37,7 +37,7 @@
   .home .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 13rem);
     .intro {
       p {
         font-size: 1.8rem;

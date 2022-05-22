@@ -1,5 +1,5 @@
 .dashboard .container {
-  height: 100%;
+  height: calc(100vh - 12rem);
   display: flex;
   flex-direction: column;
   .Container-dashboards {
@@ -48,7 +48,6 @@
 
 @media screen and (min-width: 700px) {
   .dashboard .container {
-    height: 100% !important;
     display: flex;
     flex-direction: column;
     .Container-dashboards {
@@ -56,8 +55,10 @@
       flex-direction: row;
       .dashboardBox {
         width: calc(50% - 2rem);
+        height: 50rem;
+        position: relative;
         canvas {
-          height: 50rem;
+          position: absolute;
         }
       }
     }

@@ -27,12 +27,13 @@
             color: $color-lightBlue;
           }
         }
-        button {
+        .addButton {
           padding: 0.5rem 0.75rem;
           margin: 0 auto;
           background: $color-light;
           color: $color-lightBlue;
           border: 0.05rem solid $color-lightBlue;
+          z-index: 1000;
         }
       }
     }

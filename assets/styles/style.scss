@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap");
 
-@import "colors.scss";
+$color-blue: #003459;
+$color-dark: #00171f;
+$color-light: #ffffff;
+$color-lightBlue: #007ea7;
+$color-primary: #003459;
+
 @import "header.scss";
 @import "elements.scss";
 @import "index.scss";
 @import "home.scss";
 @import "swiper.scss";
 @import "layouts.scss";
-@import "reset.scss";
 @import "form.scss";
 @import "footer.scss";
 @import "dashboard.scss";

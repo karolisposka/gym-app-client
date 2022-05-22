@@ -36,7 +36,7 @@ const displayExercises = (data) => {
     description.textContent = item.description;
     section.append(title, type, description);
 
-    const button = document.createElement("button");
+    const button = document.createElement("a");
     button.textContent = "Begin exercise session";
     button.classList.add("addButton");
     exercisesBlockItem.append(section, button);

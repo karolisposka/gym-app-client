@@ -32,9 +32,9 @@ const getUserData = async () => {
       return item.type;
     });
 
-    const exercisesData = exercisesTypesLabels.map((item, index) => {
+    const exercisesData = exercisesTypesLabels.map((item) => {
       return {
-        [exercisesTypesLabels[index]]: exercisesTypesData.filter((v) => {
+        number: exercisesTypesData.filter((v) => {
           return v === item;
         }).length,
       };
@@ -42,7 +42,6 @@ const getUserData = async () => {
 
     const dataset = [];
     exercisesData.forEach((item) => dataset.push(...Object.values(item)));
-    console.log(dataset);
     userExercises.forEach((item) => {
       const option = document.createElement("option");
       option.textContent = item;
@@ -58,7 +57,7 @@ const getUserData = async () => {
         {
           data: dataset,
           label: "Number of exercise sessions by type",
-          backgroundColor: ["#EEE4AB", "#EB5353"],
+          backgroundColor: ["#EEE4AB", "#EB5353", "#965156", "#EB5353"],
         },
       ],
     };
