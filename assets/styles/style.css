@@ -62,7 +62,7 @@ body header .container .navigationActive a:hover {
 }
 
 .right .container {
-  height: calc(100vh - 11rem);
+  height: calc(100vh - 15rem);
 }
 .right .container form h1 {
   display: none;
@@ -201,7 +201,7 @@ body header .container .navigationActive a:hover {
   .home .container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 13rem);
+    height: calc(100vh - 11rem);
   }
   .home .container .intro p {
     font-size: 1.8rem;
@@ -255,7 +255,7 @@ body header .container .navigationActive a:hover {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: calc(100vh - 12rem);
+  height: calc(100vh - 15rem);
   padding: 2rem;
 }
 .form-only .container form {
